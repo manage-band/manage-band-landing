@@ -7,7 +7,12 @@ module.exports = {
         '2xl': '1400px',
       },
     },
-    extend: {},
+    extend: {
+      colors: {
+        background: '#111115',
+        brandRed: '#EC213A',
+      },
+    },
   },
   plugins: [],
 };
