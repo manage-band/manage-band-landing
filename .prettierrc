@@ -7,7 +7,7 @@
   "jsxSingleQuote": true,
   "quoteProps": "as-needed",
   "trailingComma": "all",
-  "singleAttributePerLine": true,
+  "singleAttributePerLine": false,
   "htmlWhitespaceSensitivity": "css",
   "vueIndentScriptAndStyle": false,
   "proseWrap": "preserve",
@@ -17,7 +17,7 @@
   "tabWidth": 2,
   "useTabs": false,
   "embeddedLanguageFormatting": "auto",
-  "plugins": ["prettier-plugin-astro"],
+  "plugins": ["prettier-plugin-organize-imports", "prettier-plugin-astro"],
   "overrides": [
     {
       "files": "*.astro",
