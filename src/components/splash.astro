@@ -10,7 +10,7 @@ const help = '* pomożemy z resztą *';
     <HeroBackground />
   </div>
   <div class='relative grid h-full place-items-center w-full'>
-    <div class='w-full h-full'>
+    <div class='w-full h-full container'>
       <div
         class='sm:h-[calc(100%-177px)] h-[calc(100%-217px)] mt-[97px] w-full grid place-items-center space-y-16'
       >
@@ -28,8 +28,10 @@ const help = '* pomożemy z resztą *';
         class='sm:h-[80px] h-[120px] w-full flex sm:justify-between sm:space-y-0 space-y-4 flex-col sm:flex-row items-center'
       >
         <div>{help}</div>
-        <button class='border rounded-full border-brandRed px-8 py-2'
-          >Zobacz więcej</button
+        <a href='#intro'
+          ><button class='border rounded-full border-brandRed px-8 py-2'
+            >Zobacz więcej</button
+          ></a
         >
       </div>
     </div>

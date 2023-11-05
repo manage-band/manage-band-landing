@@ -1,0 +1,21 @@
+---
+export type Props = {
+  id: string;
+  title: string;
+  background?: string;
+  className?: string;
+  img?: string;
+};
+const { id, title, background, className, img } = Astro.props;
+---
+
+<div
+  id={id}
+  class={`border rounded-3xl border-transparent px-12 py-8 ${
+    background ?? 'bg-darkBackground'
+  }${className ? ` ${className}` : ''}`}
+>
+  {img && <img src={img} class='w-12 h-12 mb-4' />}
+  <h2 class='text-2xl font-bold text-white mb-4'>{title}</h2>
+  <slot name='content' />
+</div>

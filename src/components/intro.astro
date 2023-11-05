@@ -1,0 +1,70 @@
+---
+import ContentSection from './content-section.astro';
+import Tile from './tile.astro';
+import Chart from '@/assets/mb-chart.png';
+---
+
+<ContentSection id='intro' title=''>
+  <Fragment slot='lead'>
+    <div class='grid lg:grid-cols-6 grid-cols-1 lg:gap-8 gap-4'>
+      <Tile id='one' title='.goal' img='mb-chart.png' className='lg:col-span-6'>
+        <Fragment slot='content'>
+          <p class='text-sm'>
+            Wybierz cel, który chcesz osiągnąć - dystrybucję cyfrową, wydanie
+            nośnika, umieszczenie piosenki na playliście radiowej i wiele innych
+            - a aplikacja poprowadzi Cię przez wszystkie niezbędne procesy, by
+            cel ten osiągnąć.
+          </p>
+        </Fragment>
+      </Tile>
+      <Tile id='two' title='.team' img='mb-goal.png' className='lg:col-span-4'>
+        <Fragment slot='content'>
+          <p class='text-sm'>
+            Podziel się pracą ze swoją drużyną i współpracownikami na dowolnym
+            etapie procesu. Jasno określcie obowiązki, terminy, zbierzcie
+            feedback i zapiszcie historię komunikacji, tak by łatwo można było
+            wrócić do ustaleń.
+          </p>
+        </Fragment>
+      </Tile>
+      <Tile id='two' title='.contact' img='mb-pc.png' className='lg:col-span-2'>
+        <Fragment slot='content'>
+          <p class='text-sm'>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet
+            minima numquam mollitia molestiae suscipit non cumque consequuntur
+            ipsa dolor illo provident quasi fugit dolore repudiandae rem
+            voluptatibus, consectetur magnam laudantium!
+          </p>
+        </Fragment>
+      </Tile>
+      <Tile
+        id='two'
+        title='.storage'
+        img='mb-peers.png'
+        className='lg:col-span-3'
+      >
+        <Fragment slot='content'>
+          <p class='text-sm'>
+            Artist.storage to przestrzeń dla Twojego projektu artystycznego.
+            Dzięki niej możesz zapisywać wszystkie niezbędne dane - muzykę,
+            słowa, zdjęcia czy pakiety prasowe - w jednym miejscu.
+          </p>
+        </Fragment>
+      </Tile>
+      <Tile
+        id='two'
+        title='.version'
+        img='mb-peers.png'
+        className='lg:col-span-3'
+      >
+        <Fragment slot='content'>
+          <p class='text-sm'>
+            Dzięki automatycznemu nadaniu wersji Twoim plikom z łatwością
+            zachowasz porządek i znajdziesz odpowiednią wersję miksu, tekstu czy
+            fotografii zespołowej.
+          </p>
+        </Fragment>
+      </Tile>
+    </div>
+  </Fragment>
+</ContentSection>

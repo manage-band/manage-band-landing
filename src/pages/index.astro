@@ -2,9 +2,13 @@
 import Splash from '@/components/splash.astro';
 import Layout from '../layouts/Layout.astro';
 import Header from '@/components/header.astro';
+import Intro from '@/components/intro.astro';
 ---
 
 <Layout>
   <Header />
   <Splash />
+  <div class='space-y-24 px-8 py-32'>
+    <Intro />
+  </div>
 </Layout>
