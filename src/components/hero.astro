@@ -1,0 +1,21 @@
+---
+import HeroBackground from './hero-background.astro';
+import HeroImage from '@/components/hero-image.astro';
+import HeroMessage from '@/components/hero-message.astro';
+---
+
+<section class='relative grid min-h-full place-items-center bg-background px-8'>
+  <div id='splash-bg-fallback' class='absolute inset-0 hidden opacity-40'>
+    <HeroBackground />
+  </div>
+  <div class='absolute h-full max-w-full lg:relative'>
+    <div class='container grid h-full w-full place-items-center'>
+      <div
+        class='mt-[97px] flex items-center justify-center lg:grid lg:h-[calc(100%-97px)] lg:grid-cols-2 lg:place-items-center lg:gap-16'
+      >
+        <HeroMessage />
+        <HeroImage />
+      </div>
+    </div>
+  </div>
+</section>
