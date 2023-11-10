@@ -1,0 +1,23 @@
+---
+export type Props = {
+  title: string;
+  description?: string;
+};
+
+const { title, description } = Astro.props;
+---
+
+<div class='w-full space-y-4 md:w-1/2'>
+  <h1
+    class='text-center text-2xl font-extrabold tracking-tight md:text-4xl lg:text-6xl'
+  >
+    {title}
+  </h1>
+  {
+    description && (
+      <h2 class='text-md px-8 text-center font-thin text-gray-300'>
+        {description}
+      </h2>
+    )
+  }
+</div>
