@@ -10,7 +10,11 @@ module.exports = {
     },
     extend: {
       colors: {
-        brand: '#EC213A',
+        brand: {
+          DEFAULT: '#EC213A',
+          secondary: '#93291E',
+          tertiary: '#c02123',
+        },
         background: {
           DEFAULT: '#111115',
           dark: '#0D0D0F',

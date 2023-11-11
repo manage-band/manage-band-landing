@@ -1,0 +1,18 @@
+---
+import { Icon } from 'astro-icon';
+
+export type Props = {
+  href: string;
+  social: string;
+};
+
+const { href, social } = Astro.props;
+---
+
+<a href={href}>
+  <Icon
+    pack='mdi'
+    name={social}
+    class='hover:text-brand h-12 w-12 cursor-pointer transition-colors duration-100'
+  />
+</a>
