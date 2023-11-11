@@ -9,10 +9,10 @@ export type Props = {
 const { href, social } = Astro.props;
 ---
 
-<a href={href}>
+<a href={href} aria-label={`Manage.Band ${social}`}>
   <Icon
     pack='mdi'
     name={social}
-    class='hover:text-brand h-12 w-12 cursor-pointer transition-colors duration-100'
+    class='hover:text-brand-tertiary h-12 w-12 cursor-pointer transition-colors duration-100'
   />
 </a>
