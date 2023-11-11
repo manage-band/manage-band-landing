@@ -1,3 +1,7 @@
+---
+import Button from './button.astro';
+---
+
 <div class='grid place-items-center px-8 py-8 lg:px-16'>
   <div class='space-y-8'>
     <h1 class='text-center text-6xl font-semibold'>SKUP SIĘ NA MUZYCE</h1>
@@ -7,11 +11,7 @@
       <span class='text-brand'>*</span>
     </h2>
     <div class='text-center'>
-      <a href='#features'>
-        <button class='border-brand rounded-full border px-8 py-2'>
-          Zobacz więcej
-        </button>
-      </a>
+      <Button href='#features' label='Zobacz więcej' />
     </div>
   </div>
 </div>

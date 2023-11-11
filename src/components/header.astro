@@ -1,11 +1,5 @@
 ---
-import type { NavItem } from '@/types';
-
-const navItems: Array<NavItem> = [
-  { title: 'Funkcjonalności', url: '#features' },
-  { title: 'Dla kogo', url: '#for-who' },
-  { title: 'O nas', url: '#about-us' },
-];
+import Button from './button.astro';
 ---
 
 <header
@@ -20,18 +14,6 @@ const navItems: Array<NavItem> = [
         <span>Manage.</span><span class='text-brand'>Band</span>
       </h1>
     </a>
-    <nav class='hidden sm:block' id='main-navigation'>
-      <ul class='flex items-center gap-8'>
-        {
-          navItems.map(({ title, url }) => (
-            <li>
-              <a class='text-md' href={url}>
-                {title}
-              </a>
-            </li>
-          ))
-        }
-      </ul>
-    </nav>
+    <Button href='#' label='Zapisz się' />
   </div>
 </header>

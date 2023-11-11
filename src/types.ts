@@ -1,8 +1,3 @@
-export type NavItem = {
-  title: string;
-  url: string;
-};
-
 export type Goal = {
   title: string;
   img: string;
