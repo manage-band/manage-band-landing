@@ -9,9 +9,13 @@ import { About } from '@/content/_about';
       <section class='text-md text-text-muted space-y-4'>
         {
           About.map((paragraph, idx) => (
-            <p id={`about-${idx.toString()}`} class='text-md text-text-muted'>
-              {paragraph.content}
-            </p>
+            <p
+              id={`about-${idx.toString()}`}
+              class={`text-md text-text-muted${
+                paragraph.styling ? ` ${paragraph.styling}` : ''
+              }`}
+              set:html={paragraph.content}
+            />
           ))
         }
       </section>

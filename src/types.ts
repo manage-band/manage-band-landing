@@ -13,4 +13,5 @@ export type Goal = {
 
 export type Paragraph = {
   content: string;
+  styling?: string;
 };
