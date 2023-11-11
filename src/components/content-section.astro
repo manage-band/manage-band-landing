@@ -10,7 +10,7 @@ const { id, title, description } = Astro.props;
 ---
 
 <section id={id} class='flex scroll-mt-24 flex-col items-center'>
-  <div class='container space-y-16'>
+  <div class='container space-y-8'>
     <div class='container flex flex-col items-center gap-4'>
       {title && <ContentHeader title={title} description={description} />}
     </div>
