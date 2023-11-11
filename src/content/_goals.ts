@@ -1,6 +1,6 @@
-import type { GoalType } from '@/types';
+import type { Goal } from '@/types';
 
-export const goals: GoalType[] = [
+export const goals: Goal[] = [
   {
     title: '.goal',
     img: 'mb-goal.png',

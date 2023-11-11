@@ -1,0 +1,26 @@
+---
+import ContentSection from './content-section.astro';
+import { About } from '@/content/_about';
+---
+
+<ContentSection id='about-us' title='O nas'>
+  <Fragment slot='afterword'>
+    <div class='space-y-4'>
+      <section class='text-md text-text-muted space-y-4'>
+        {
+          About.map((paragraph, idx) => (
+            <p id={`about-${idx.toString()}`} class='text-md text-text-muted'>
+              {paragraph.content}
+            </p>
+          ))
+        }
+      </section>
+      <section class='w-full rounded-3xl border border-transparent p-8'>
+        <div class='flex items-center justify-center space-x-8'>
+          <span class='text-text-muted'>We współpracy z</span>
+          <img src='logo-tbm.png' alt='Tak Brzmi Miasto' class='w-32' />
+        </div>
+      </section>
+    </div>
+  </Fragment>
+</ContentSection>

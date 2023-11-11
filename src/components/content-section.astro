@@ -4,10 +4,9 @@ export type Props = {
   id: string;
   title: string;
   description?: string;
-  afterword?: string;
 };
 
-const { id, title, description, afterword } = Astro.props;
+const { id, title, description } = Astro.props;
 ---
 
 <section id={id} class='flex scroll-mt-24 flex-col items-center'>
@@ -15,13 +14,13 @@ const { id, title, description, afterword } = Astro.props;
     <div class='container flex flex-col items-center gap-4'>
       {title && <ContentHeader title={title} description={description} />}
     </div>
-    <p class='container max-w-xl text-center text-2xl font-extrabold'>
+    <p class='container text-center text-2xl font-extrabold'>
       <slot name='lead' />
     </p>
-    {
-      afterword && (
-        <p class='text-md container max-w-xl text-center'>{afterword}</p>
-      )
-    }
+    <div
+      class='container flex max-w-4xl items-center justify-center text-center'
+    >
+      <slot name='afterword' />
+    </div>
   </div>
 </section>

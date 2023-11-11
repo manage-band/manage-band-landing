@@ -1,6 +1,6 @@
 ---
-import type { GoalType } from '@/types';
-export type Props = GoalType & {
+import type { Goal } from '@/types';
+export type Props = Goal & {
   id: string;
 };
 const { id, title, background, styling, img } = Astro.props;
@@ -9,7 +9,7 @@ const { id, title, background, styling, img } = Astro.props;
 <div
   id={id}
   class={`border rounded-3xl border-transparent px-12 py-8 ${
-    background ?? 'bg-darkBackground'
+    background ?? 'bg-background-dark'
   }${styling ? ` ${styling}` : ''}`}
 >
   {img && <img src={img} class='mb-4 h-12 w-12' />}
