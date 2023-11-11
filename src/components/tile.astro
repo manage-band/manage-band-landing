@@ -12,7 +12,7 @@ const { id, title, background, styling, img } = Astro.props;
     background ?? 'bg-background-dark'
   }${styling ? ` ${styling}` : ''}`}
 >
-  {img && <img src={img} class='mb-4 h-12 w-12' />}
+  {img && <img src={img} alt={title} class='mb-4 h-12 w-12' />}
   <h2 class='mb-4 text-2xl font-bold text-white'>{title}</h2>
   <slot name='content' />
 </div>
