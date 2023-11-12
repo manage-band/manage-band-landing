@@ -4,13 +4,20 @@ import Button from './button.astro';
 
 <div class='grid place-items-center px-8 py-8 lg:px-16'>
   <div class='space-y-8'>
-    <h1 class='text-center text-6xl font-semibold'>SKUP SIĘ NA MUZYCE</h1>
-    <h2 class='space-x-1 text-center text-xl'>
+    <h1 class='flex flex-col text-left text-7xl font-semibold'>
+      <span>SKUP SIĘ</span><span
+        >NA <span
+          class='bg-gradient-to-r from-brand to-brand-secondary bg-clip-text text-transparent'
+          >MUZYCE</span
+        ></span
+      >
+    </h1>
+    <h2 class='space-x-1 text-left text-xl'>
       <span class='text-brand'>*</span>
       <span>pomożemy z resztą</span>
       <span class='text-brand'>*</span>
     </h2>
-    <div class='text-center'>
+    <div class='text-left'>
       <Button href='#features' label='Zobacz więcej' />
     </div>
   </div>
