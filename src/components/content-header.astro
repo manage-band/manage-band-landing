@@ -7,7 +7,7 @@ export type Props = {
 const { title, description } = Astro.props;
 ---
 
-<div class='w-full space-y-8 md:w-1/2'>
+<div class='w-full space-y-8 md:w-2/3'>
   <h1
     class='text-center text-2xl font-extrabold tracking-tight md:text-4xl lg:text-6xl'
   >
@@ -15,7 +15,7 @@ const { title, description } = Astro.props;
   </h1>
   {
     description && (
-      <p class='text-md text-text-muted px-8 text-center'>{description}</p>
+      <p class='text-md px-8 text-center text-text-muted'>{description}</p>
     )
   }
 </div>

@@ -6,7 +6,7 @@ import { About } from '@/content/_about';
 <ContentSection id='about-us' title='O nas'>
   <Fragment slot='afterword'>
     <div class='space-y-4'>
-      <section class='text-md text-text-muted space-y-4'>
+      <section class='text-md space-y-4 text-text-muted'>
         {
           About.map((paragraph, idx) => (
             <p
@@ -22,7 +22,13 @@ import { About } from '@/content/_about';
       <section class='w-full rounded-3xl border border-transparent p-8'>
         <div class='flex items-center justify-center space-x-8'>
           <span class='text-text-muted'>We współpracy z</span>
-          <img src='logo-tbm.png' alt='Tak Brzmi Miasto' class='w-32' />
+          <img
+            src='logo-tbm.png'
+            alt='Tak Brzmi Miasto'
+            width='305px'
+            height='228px'
+            class='w-32'
+          />
         </div>
       </section>
     </div>
