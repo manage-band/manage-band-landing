@@ -12,6 +12,7 @@ export const About: Paragraph[] = [
   {
     content:
       'Chcemy ułatwić funkcjonowanie artystom w brutalnym świecie muzyki, bo wiemy, że granie jest w tym wszystkim najłatwiejsze.',
-    styling: 'text-lg font-bold',
+    styling:
+      'font-bold bg-gradient-to-br from-brand to-brand-secondary bg-clip-text text-transparent',
   },
 ];

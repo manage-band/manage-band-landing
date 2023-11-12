@@ -11,7 +11,7 @@ import { About } from '@/content/_about';
           About.map((paragraph, idx) => (
             <p
               id={`about-${idx.toString()}`}
-              class={`text-md text-text-muted${
+              class={`text-md ${
                 paragraph.styling ? ` ${paragraph.styling}` : ''
               }`}
               set:html={paragraph.content}
