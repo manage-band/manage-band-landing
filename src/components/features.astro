@@ -15,7 +15,7 @@ import { goals } from '@/content/_goals';
         goals.map((goal) => (
           <Tile id={`goal-${goal.title}`} {...goal}>
             <Fragment slot='content'>
-              <p class='text-sm'>{goal.description}</p>
+              <p class='text-sm text-text-muted'>{goal.description}</p>
             </Fragment>
           </Tile>
         ))
