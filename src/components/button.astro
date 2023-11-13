@@ -2,14 +2,20 @@
 export type Props = {
   href: string;
   label: string;
+  variant?: 'color' | 'outline';
 };
 
-const { href, label } = Astro.props;
+const buttonColors = {
+  color: 'bg-gradient-to-r from-brand to-brand-secondary',
+  outline: 'bg-transparent border-2 border-brand hover:bg-brand',
+};
+
+const { href, label, variant = 'color' } = Astro.props;
 ---
 
 <a href={href}>
   <button
-    class='hover:bg-brand-secondary bg-brand-tertiary rounded-lg px-7 py-3 text-white transition-colors duration-100 ease-in-out'
+    class=`rounded-full px-12 py-2 text-white transition-colors duration-150 ease-in-out ${buttonColors[variant]}`
     >{label}</button
   >
 </a>

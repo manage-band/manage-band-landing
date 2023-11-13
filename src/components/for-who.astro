@@ -1,15 +1,24 @@
 ---
 import ContentSection from './content-section.astro';
+import ManageBand from './manage-band.astro';
 ---
 
 <ContentSection
   id='for-who'
   title='Dla kogo?'
-  description='Aplikacja manage.band będzie przydatna zarówno dla osób pracujących samodzielnie, które chcą uporządkować swoje pomysły i projekty, jak i dla zespołów, które potrzebują skutecznego narzędzia do śledzenia postępu prac oraz jasnego delegowania zadań.'
+  backgroundImage='/dla-kogo-particles.png'
 >
   <Fragment slot='lead'>
     <div class='grid place-items-center'>
       <img src='mb-for-who.png' alt='Dla kogo?' width='1312px' height='598px' />
     </div>
+  </Fragment>
+  <Fragment slot='afterword'>
+    <p class='text-md text-center'>
+      Aplikacja <ManageBand /> będzie przydatna zarówno dla osób pracujących
+      samodzielnie, które chcą uporządkować swoje pomysły i projekty, jak i dla
+      zespołów, które potrzebują skutecznego narzędzia do śledzenia postępu prac
+      oraz jasnego delegowania zadań.
+    </p>
   </Fragment>
 </ContentSection>

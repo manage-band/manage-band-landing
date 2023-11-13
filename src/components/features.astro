@@ -6,7 +6,7 @@ import { goals } from '@/content/_goals';
 
 <ContentSection
   id='features'
-  title='Funkcjonalności'
+  title='Co możemy dla Ciebie zrobić?'
   description='Przygotowaliśmy dla Ciebie funkcjolności, które sprawią że zarządzanie karierą stanie się łatwiejsze a Ty będziesz mógł skupić się na tworzeniu.'
 >
   <Fragment slot='lead'>
@@ -15,7 +15,7 @@ import { goals } from '@/content/_goals';
         goals.map((goal) => (
           <Tile id={`goal-${goal.title}`} {...goal}>
             <Fragment slot='content'>
-              <p class='text-sm text-text-muted'>{goal.description}</p>
+              <p class='text-md text-text-muted'>{goal.description}</p>
             </Fragment>
           </Tile>
         ))

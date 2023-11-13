@@ -7,6 +7,7 @@ export const goals: Goal[] = [
     description:
       'Koncert? Singiel? A może cała płyta? Przeprowadzimy Cię za rękę od pomysłu aż do realizacji danego celu. Brakuje Ci jakichś kroków? Dodaj swoje własne i realizuj je z nami!',
     styling: 'lg:col-span-2',
+    backgroundImage: '/goal-image.svg',
   },
   {
     title: '.contact',
@@ -26,5 +27,6 @@ export const goals: Goal[] = [
     description:
       'Znowu zapomniałeś o poście na Instagramie? Nie martw się, my Ci przypomnimy. Miej zawsze pod ręką wszystkie materiały dotyczące zbliającej się premiery lub koncertu. Zachowaj konsekwencję w działaniach i zyskaj nowych fanów!',
     styling: 'lg:col-span-2',
+    backgroundImage: '/artist-image.svg',
   },
 ];

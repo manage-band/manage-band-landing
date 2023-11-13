@@ -16,7 +16,7 @@ module.exports = {
           tertiary: '#c02123',
         },
         background: {
-          DEFAULT: '#111115',
+          DEFAULT: '#15151A',
           dark: '#0D0D0F',
         },
         text: {

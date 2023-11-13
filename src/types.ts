@@ -4,6 +4,7 @@ export type Goal = {
   background?: string;
   description: string;
   styling?: string;
+  backgroundImage?: string;
 };
 
 export type Paragraph = {

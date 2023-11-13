@@ -10,11 +10,18 @@
     @apply bg-[var(--background)] text-[var(--text)];
   }
 
+  h1,
+  h2 {
+    font-family: 'Kanit';
+    @apply tracking-normal;
+  }
+
   h1 {
-    font-family: 'Kanit'
+    @apply text-6xl sm:text-7xl md:text-8xl xl:text-9xl;
   }
 
   body {
-    font-family: 'Inter', 'Arial'
+    font-family: 'Inter', 'Montserrat', 'Arial';
+    @apply font-light tracking-wide text-lg leading-relaxed;
   }
 }
