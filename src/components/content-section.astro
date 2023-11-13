@@ -2,7 +2,7 @@
 import ContentHeader from './content-header.astro';
 export type Props = {
   id: string;
-  title: string;
+  title?: string;
   description?: string;
   backgroundImage?: string;
 };
@@ -10,11 +10,11 @@ export type Props = {
 const { id, title, description, backgroundImage } = Astro.props;
 ---
 
-<section id={id} class='relative h-full scroll-mt-24'>
+<section id={id} class='container relative h-full scroll-mt-24'>
   {
     backgroundImage && (
       <div
-        id='bg-imgasdasd'
+        id={`bg-${id}`}
         style={{
           '--image-url': `url("${backgroundImage}")`,
         }}
