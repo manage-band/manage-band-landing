@@ -20,6 +20,10 @@
     @apply text-6xl sm:text-7xl md:text-8xl xl:text-9xl;
   }
 
+  h2 {
+    @apply text-3xl font-extrabold md:text-4xl lg:text-5xl;
+  }
+
   body {
     font-family: 'Inter', 'Montserrat', 'Arial';
     @apply font-light tracking-wide text-lg leading-relaxed;

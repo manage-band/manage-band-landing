@@ -3,9 +3,10 @@ import ContentSection from './content-section.astro';
 import { About } from '@/content/_about';
 ---
 
-<ContentSection id='about-us' title='O nas'>
-  <Fragment slot='afterword'>
+<section id='about-us' class='container relative h-full scroll-mt-24'>
+  <div class='lg:grid lg:grid-cols-2'>
     <div class='space-y-4'>
+      <h2>O nas</h2>
       <section class='text-md space-y-4 text-text-muted'>
         {
           About.map((paragraph, idx) => (
@@ -19,8 +20,10 @@ import { About } from '@/content/_about';
           ))
         }
       </section>
-      <section class='w-full rounded-3xl border border-transparent p-8'>
-        <div class='flex items-center justify-center space-x-8'>
+      <section class='w-full rounded-3xl border border-transparent'>
+        <div
+          class='flex items-center justify-center space-x-8 lg:justify-normal'
+        >
           <span class='text-text-muted'>We współpracy z</span>
           <img
             src='logo-tbm.png'
@@ -32,5 +35,8 @@ import { About } from '@/content/_about';
         </div>
       </section>
     </div>
-  </Fragment>
-</ContentSection>
+    <div class='hidden lg:grid lg:place-items-center'>
+      TU BĘDZIE NASZE ZDJĘCIE 😇
+    </div>
+  </div>
+</section>
