@@ -11,9 +11,5 @@ const { title, description } = Astro.props;
   <h2 class='text-center'>
     {title}
   </h2>
-  {
-    description && (
-      <p class='text-md px-8 text-center text-text-muted'>{description}</p>
-    )
-  }
+  {description && <p class='text-md px-8 text-center'>{description}</p>}
 </div>

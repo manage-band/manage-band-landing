@@ -24,8 +24,12 @@
     @apply text-3xl font-extrabold md:text-4xl lg:text-5xl;
   }
 
+  p {
+    @apply text-text-muted tracking-wide;
+  }
+
   body {
     font-family: 'Inter', 'Montserrat', 'Arial';
-    @apply font-light tracking-wide text-lg leading-relaxed;
+    @apply font-light text-lg leading-relaxed;
   }
 }
