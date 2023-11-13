@@ -2,29 +2,25 @@
 import ContentSection from './content-section.astro';
 ---
 
-<ContentSection id='when'>
-  <Fragment slot='lead'>
-    <div class='relative rounded-3xl border border-transparent'>
-      <div
-        id='when-image'
-        class={`absolute inset-0 bg-[url("/mb-when.png")] bg-cover bg-center bg-no-repeat rounded-3xl`}
-      >
-      </div>
-      <div
-        class='relative grid w-full place-items-center space-y-8 rounded-3xl bg-transparent px-8 py-16'
-      >
-        <h2 class='text-center text-2xl font-extrabold md:text-4xl lg:text-5xl'>
-          Kiedy? Jak?
-        </h2>
-        <p class='text-center font-extralight lg:w-1/2'>
-          Planujemy oddać Wam aplikację do testów w <strong>2024 roku</strong>.
-          Niebawem pojawi się jako <strong>Open Source</strong> na naszym <a
-            class='bg-gradient-to-r from-brand to-brand-secondary bg-[length:100%_2px] bg-bottom bg-no-repeat transition-[background-size] hover:bg-[length:100%_100%]'
-            href='https://github.com/manage-band'>Githubie</a
-          >, zapraszamy wszystkich zainteresowanych - muzyków, programistów,
-          testerów - do współpracy 😏
-        </p>
-      </div>
+<section id='when' class='container relative h-full scroll-mt-24'>
+  <div class='relative rounded-3xl border border-transparent'>
+    <div
+      id='when-image'
+      class={`absolute inset-0 bg-[url("/mb-when.png")] bg-cover bg-center bg-no-repeat rounded-3xl`}
+    >
     </div>
-  </Fragment>
-</ContentSection>
+    <div
+      class='relative grid w-full place-items-center space-y-8 rounded-3xl bg-transparent px-8 py-16'
+    >
+      <h2 class='text-center'>Kiedy? Jak?</h2>
+      <p class='text-center font-extralight lg:w-1/2'>
+        Planujemy oddać Wam aplikację do testów w <strong>2024 roku</strong>.
+        Niebawem pojawi się jako <strong>Open Source</strong> na naszym <a
+          class='bg-gradient-to-r from-brand to-brand-secondary bg-[length:100%_2px] bg-bottom bg-no-repeat transition-[background-size] hover:bg-[length:100%_100%]'
+          href='https://github.com/manage-band'>Githubie</a
+        >, zapraszamy wszystkich zainteresowanych - muzyków, programistów,
+        testerów - do współpracy 😏
+      </p>
+    </div>
+  </div>
+</section>
