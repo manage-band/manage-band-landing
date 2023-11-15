@@ -8,10 +8,10 @@ const { id, title, background, styling, img, backgroundImage } = Astro.props;
 
 <div
   id={id}
-  class={`border rounded-3xl border-transparent py-8 ${
+  class={`border rounded-3xl border-transparent grid place-items-center py-8 ${
     background ?? 'bg-background-dark'
   }${styling ? ` ${styling}` : ''}${
-    backgroundImage ? ' grid md:grid-cols-2' : ' px-12'
+    backgroundImage ? ' md:grid-cols-2' : ' px-12'
   }
   `}
 >
