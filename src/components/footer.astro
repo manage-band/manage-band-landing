@@ -1,4 +1,5 @@
 ---
+import { links } from '@/content/_links';
 import ManageBand from './manage-band.astro';
 import SocialLink from './social-link.astro';
 import Button from './button.astro';
@@ -18,13 +19,13 @@ import Button from './button.astro';
     <div class='flex space-x-8'>
       <Button
         styling='hidden lg:block'
-        href='https://linktr.ee/manage.band/'
+        href={links.linktree}
         newTab
         label='Poznajmy się'
         variant='outline'
       />
-      <SocialLink social='github' href='https://github.com/manage-band' />
-      <SocialLink social='instagram' href='https://instagram.com/manage.band' />
+      <SocialLink social='github' href={links.github} />
+      <SocialLink social='instagram' href={links.instagram} />
     </div>
   </div>
 </footer>

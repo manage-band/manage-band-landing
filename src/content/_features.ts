@@ -1,6 +1,6 @@
-import type { Goal } from '@/types';
+import type { Feature } from '@/types';
 
-export const goals: Goal[] = [
+export const features: Feature[] = [
   {
     title: '.goal',
     img: 'goal-icon.svg',

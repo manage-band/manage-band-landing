@@ -1,4 +1,4 @@
-export type Goal = {
+export type Feature = {
   title: string;
   img: string;
   background?: string;

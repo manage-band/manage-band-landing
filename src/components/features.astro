@@ -1,7 +1,7 @@
 ---
 import ContentSection from './content-section.astro';
 import Tile from './tile.astro';
-import { goals } from '@/content/_goals';
+import { features } from '@/content/_features';
 ---
 
 <ContentSection
@@ -12,10 +12,10 @@ import { goals } from '@/content/_goals';
   <Fragment slot='lead'>
     <div class='grid grid-cols-1 gap-4 lg:grid-cols-3'>
       {
-        goals.map((goal) => (
-          <Tile id={`goal-${goal.title}`} {...goal}>
+        features.map((feature) => (
+          <Tile id={`feature-${feature.title}`} {...feature}>
             <Fragment slot='content'>
-              <p class='text-md text-text-muted'>{goal.description}</p>
+              <p class='text-md text-text-muted'>{feature.description}</p>
             </Fragment>
           </Tile>
         ))

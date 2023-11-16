@@ -1,4 +1,5 @@
 ---
+import { links } from '@/content/_links';
 import Button from './button.astro';
 import ManageBand from './manage-band.astro';
 ---
@@ -16,7 +17,7 @@ import ManageBand from './manage-band.astro';
       </h2>
     </a>
     <Button
-      href='https://linktr.ee/manage.band/'
+      href={links.linktree}
       newTab
       label='Poznajmy się'
       variant='outline'
