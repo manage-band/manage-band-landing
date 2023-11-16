@@ -1,3 +1,6 @@
+@import '@fontsource/inter';
+@import '@fontsource/kanit';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,6 +8,28 @@
 @layer base {
   * {
     @apply bg-[var(--background)] text-[var(--text)];
-    font-family: 'Montserrat', sans-serif;
+  }
+
+  h1,
+  h2 {
+    font-family: 'Kanit';
+    @apply tracking-normal;
+  }
+
+  h1 {
+    @apply text-6xl sm:text-7xl md:text-8xl xl:text-9xl;
+  }
+
+  h2 {
+    @apply text-3xl font-extrabold md:text-4xl lg:text-5xl;
+  }
+
+  p {
+    @apply text-text-muted tracking-wide;
+  }
+
+  body {
+    font-family: 'Inter', 'Montserrat', 'Arial';
+    @apply font-light text-lg leading-relaxed;
   }
 }

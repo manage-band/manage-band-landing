@@ -1,0 +1,38 @@
+---
+import ContentHeader from './content-header.astro';
+export type Props = {
+  id: string;
+  title?: string;
+  description?: string;
+  backgroundImage?: string;
+};
+
+const { id, title, description, backgroundImage } = Astro.props;
+---
+
+<section id={id} class='container relative h-full scroll-mt-24'>
+  {
+    backgroundImage && (
+      <div
+        id={`bg-${id}`}
+        style={{
+          '--image-url': `url("${backgroundImage}")`,
+        }}
+        class={`absolute inset-0 bg-[image:var(--image-url)] bg-contain bg-center bg-no-repeat`}
+      />
+    )
+  }
+  <div class='relative space-y-8'>
+    <div class='container flex flex-col items-center gap-4'>
+      {title && <ContentHeader title={title} description={description} />}
+    </div>
+    <p class='container text-center text-2xl font-extrabold'>
+      <slot name='lead' />
+    </p>
+    <div
+      class='container flex max-w-4xl items-center justify-center text-center'
+    >
+      <slot name='afterword' />
+    </div>
+  </div>
+</section>

@@ -1,0 +1,28 @@
+---
+import ContentSection from './content-section.astro';
+import Tile from './tile.astro';
+import { features } from '@/content/_features';
+---
+
+<ContentSection
+  id='features'
+  title='Co możemy dla Ciebie zrobić?'
+  description='Przygotowujemy dla Ciebie funkcjolności, które sprawią że zarządzanie karierą stanie się łatwiejsze a Ty będziesz mógł skupić się na tworzeniu.'
+>
+  <Fragment slot='lead'>
+    <div class='grid grid-cols-1 gap-4 lg:grid-cols-3'>
+      {
+        features.map((feature) => (
+          <Tile id={`feature-${feature.title}`} {...feature}>
+            <Fragment slot='content'>
+              <p class='text-md text-text-muted'>{feature.description}</p>
+            </Fragment>
+          </Tile>
+        ))
+      }
+    </div>
+  </Fragment>
+  <Fragment slot='afterword'>
+    <p class='text-md text-center'>...i wiele innych 😏</p>
+  </Fragment>
+</ContentSection>

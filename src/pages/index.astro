@@ -1,9 +1,22 @@
 ---
+import Hero from '@/components/hero.astro';
 import Layout from '../layouts/Layout.astro';
+import Header from '@/components/header.astro';
+import Features from '@/components/features.astro';
+import ForWho from '@/components/for-who.astro';
+import AboutUs from '@/components/about-us.astro';
+import When from '@/components/when.astro';
+import Footer from '@/components/footer.astro';
 ---
 
-<Layout title='Manage Band'>
-  <main class='flex h-screen w-screen justify-center items-center text-white'>
-    Here will be the Manage Band landing page.
-  </main>
+<Layout>
+  <Header />
+  <Hero />
+  <div class='space-y-24 px-8 py-24'>
+    <Features />
+    <ForWho />
+    <When />
+    <AboutUs />
+  </div>
+  <Footer />
 </Layout>

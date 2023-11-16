@@ -1,0 +1,31 @@
+---
+import { links } from '@/content/_links';
+import ManageBand from './manage-band.astro';
+import SocialLink from './social-link.astro';
+import Button from './button.astro';
+---
+
+<footer class='w-full border-t border-transparent bg-background-dark p-8'>
+  <div class='container flex items-center justify-between'>
+    <div>
+      <a class='flex items-center gap-4' href='#'>
+        <h2 class='sr-only'>Manage.Band</h2>
+        <img src='favicon.svg' alt='Manage.Band' height='24px' width='24px' />
+        <h2 class='hidden text-2xl font-black sm:block'>
+          <ManageBand />
+        </h2>
+      </a>
+    </div>
+    <div class='flex space-x-8'>
+      <Button
+        styling='hidden lg:block'
+        href={links.linktree}
+        newTab
+        label='Poznajmy się'
+        variant='outline'
+      />
+      <SocialLink social='github' href={links.github} />
+      <SocialLink social='instagram' href={links.instagram} />
+    </div>
+  </div>
+</footer>

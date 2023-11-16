@@ -1,0 +1,22 @@
+---
+import HeroImage from '@/components/hero-image.astro';
+import HeroMessage from '@/components/hero-message.astro';
+---
+
+<section class='relative h-full min-h-[800px] bg-background'>
+  <div
+    id='bg-img'
+    class='absolute inset-0 bg-[url("/hero-background.png")] bg-cover bg-center bg-no-repeat opacity-50'
+  >
+  </div>
+  <div class='relative grid h-full place-items-center px-8'>
+    <div class='container grid h-full w-full place-items-center'>
+      <div
+        class='mt-[97px] flex w-full items-center justify-center lg:grid lg:h-[calc(100%-97px)] lg:grid-cols-2 lg:gap-8'
+      >
+        <HeroMessage />
+        <HeroImage />
+      </div>
+    </div>
+  </div>
+</section>

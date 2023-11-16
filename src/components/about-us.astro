@@ -1,0 +1,41 @@
+---
+import { About } from '@/content/_about';
+---
+
+<section id='about-us' class='container relative h-full scroll-mt-24'>
+  <div class='gap-16 lg:grid lg:grid-cols-2'>
+    <div class='space-y-4'>
+      <h2>O nas</h2>
+      <section class='text-md space-y-4'>
+        {
+          About.map((paragraph, idx) => (
+            <p
+              id={`about-${idx.toString()}`}
+              class={`text-md ${
+                paragraph.styling ? ` ${paragraph.styling}` : ''
+              }`}
+              set:html={paragraph.content}
+            />
+          ))
+        }
+      </section>
+      <section class='w-full rounded-3xl border border-transparent'>
+        <div
+          class='flex items-center justify-center space-x-8 lg:justify-normal'
+        >
+          <span class='text-text-muted'>We współpracy z</span>
+          <img
+            src='logo-tbm.png'
+            alt='Tak Brzmi Miasto'
+            width='305px'
+            height='228px'
+            class='w-32'
+          />
+        </div>
+      </section>
+    </div>
+    <div class='hidden lg:grid lg:place-items-center'>
+      TU BĘDZIE NASZE ZDJĘCIE 😇
+    </div>
+  </div>
+</section>
