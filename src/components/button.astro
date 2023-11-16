@@ -4,6 +4,7 @@ export type Props = {
   label: string;
   variant?: 'color' | 'outline';
   styling?: string;
+  newTab?: boolean;
 };
 
 const buttonColors = {
@@ -11,10 +12,10 @@ const buttonColors = {
   outline: 'bg-transparent border-2 border-brand hover:bg-brand-tertiary',
 };
 
-const { href, label, variant = 'color', styling } = Astro.props;
+const { href, label, variant = 'color', styling, newTab = false } = Astro.props;
 ---
 
-<a href={href} class={styling ?? ''} target='_blank'>
+<a href={href} class={styling ?? ''} target={newTab ? '_blank' : ''}>
   <button
     class=`rounded-full px-12 py-2 text-white transition-colors duration-150 ease-in-out ${buttonColors[variant]}`
     >{label}</button
