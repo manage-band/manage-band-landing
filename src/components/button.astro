@@ -14,7 +14,7 @@ const buttonColors = {
 const { href, label, variant = 'color', styling } = Astro.props;
 ---
 
-<a href={href} class={styling ?? ''}>
+<a href={href} class={styling ?? ''} target='_blank'>
   <button
     class=`rounded-full px-12 py-2 text-white transition-colors duration-150 ease-in-out ${buttonColors[variant]}`
     >{label}</button
